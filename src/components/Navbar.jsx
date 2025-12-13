@@ -1,6 +1,8 @@
 import React from 'react';
 import { Home, Briefcase, Github, Mail, Linkedin } from 'lucide-react';
 import "../App.css"
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
   return (
     <div className="fixed bottom-10 left-1/2 -translate-x-1/2 z-[9999] pointer-events-auto">
@@ -13,13 +15,14 @@ const Navbar = () => {
           <Home className="w-5 h-5 text-white group-hover:scale-110 transition-transform" />
         </a>
 
-        <a
-          href="/projects"
-          aria-label="Projects"
-          className="w-10 h-10 rounded-full bg-white/5 hover:bg-white/10 flex items-center justify-center transition-transform duration-300 group"
-        >
-          <Briefcase className="w-5 h-5 text-white group-hover:scale-110 transition-transform" />
-        </a>
+        <Link
+  to="/projects"
+  aria-label="Projects"
+  className="w-10 h-10 rounded-full bg-white/5 hover:bg-white/10 flex items-center justify-center transition-transform duration-300 group"
+>
+  <Briefcase className="w-5 h-5 text-white group-hover:scale-110 transition-transform" />
+</Link>
+
 
         <a
           href="https://www.linkedin.com/in/sayyida-jahan-k/"
