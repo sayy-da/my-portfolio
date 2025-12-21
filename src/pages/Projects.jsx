@@ -1,6 +1,5 @@
 import React from 'react';
 import { Globe, Github, Home, Linkedin, Mail,Briefcase } from 'lucide-react';
-// import Navbar from '../components/Navbar';
 import '../App.css'
 
 export default function Projects() {
@@ -11,7 +10,7 @@ export default function Projects() {
       description: "Perfume shop is an advanced E-commerce web application that includes all the features necessary for a successful E-commerce store.",
       tags: [ "cron-job","EJS", "Javascript", "MongoDb", "Mongoose", "Css", "Node.js", "Express.js", "whatsapp-web.js"],
       links: {
-        website: "#",
+        website: "https://car-wash-7k28.onrender.com/",
         source: "https://github.com/sayy-da/car-wash"
       }
     },
@@ -21,16 +20,16 @@ export default function Projects() {
       description: "Perfume shop is an advanced E-commerce web application that includes all the features necessary for a successful E-commerce store.",
       tags: ["Ejs", "Javascript", "MongoDb", "Mongoose", "Css", "RazorPay", "Node.js", "Express.js"],
       links: {
-        website: "#",
+        website: "https://labelle.onrender.com",
         source: "https://github.com/sayy-da/labelle"
       }
     }
   ];
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className=" bg-black text-white">
       <div className="max-w-7xl mx-auto px-6 py-12 flex flex-col">
-        {/* Header */}
+
         <div className="text-center mb-12">
           <button className="mb-6 px-6 py-2 bg-white text-black rounded-full text-sm font-medium hover:bg-gray-200 transition-colors">
             My Projects
@@ -43,7 +42,6 @@ export default function Projects() {
           </p>
         </div>
 
-        {/* Projects Grid */}
         <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
           {projects.map((project, index) => (
             <div 

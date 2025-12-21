@@ -22,13 +22,6 @@ const HomePage = () => {
       
       {/* Header */}
       <header className="relative z-20 p-6 flex justify-between items-start gap-4">
-        {/* Left Text */}
-        <div
-          className={`text-white text-sm transition-all duration-1000 flex-shrink-0
-            ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'}`}
-        >
-          © Code by Sayyida
-        </div>
 
         {/* Top Right Description - fix invalid tailwind and make it positioned correctly */}
        
