@@ -4,16 +4,18 @@ import '../App.css'
 
 export default function Projects() {
   const projects = [
-    {
-      title: "Car wash app ",
-      date: "june 2025 - july 2025 ",
-      description: "Perfume shop is an advanced E-commerce web application that includes all the features necessary for a successful E-commerce store.",
-      tags: [ "cron-job","EJS", "Javascript", "MongoDb", "Mongoose", "Css", "Node.js", "Express.js", "whatsapp-web.js"],
-      links: {
-        website: "https://car-wash-7k28.onrender.com/",
-        source: "https://github.com/sayy-da/car-wash"
-      }
-    },
+ {
+  title: "Hive",
+  date: "December 2025 - Present",
+  description: "Hive is a virtual workspace web application that enables users to collaborate and organize their work efficiently in a shared environment.",
+  tags: ["Repository Architecture", "SOLID", "OOPS", "React", "JavaScript", "MongoDB", "Node.js", "Express.js", "Phaser", "WebSockets"],
+  links:null
+  //  {
+  //   website: "https://github.com/sayy-da",
+  //   source: "https://github.com/sayy-da"
+  // }
+},
+
     {
       title: "labelle perfume E-commerce",
       date: "September 2024 - November 2024",
@@ -63,21 +65,34 @@ export default function Projects() {
                 ))}
               </div>
 
-              <div className="flex gap-3">
-                <a 
-                  href={project.links.website}
-                  className="flex items-center gap-2 px-4 py-2 bg-white text-black rounded-lg text-sm font-medium hover:bg-gray-200 transition-colors"
-                >
-                  <Globe size={16} />
-                  Website
-                </a>
-                <a 
-                  href={project.links.source}
-                  className="flex items-center gap-2 px-4 py-2 border border-gray-700 rounded-lg text-sm font-medium hover:border-gray-600 transition-colors"
-                >
-                  <Github size={16} />
-                  Source
-                </a>
+               <div className="flex gap-3">
+                {project.links ? (
+                  <>
+                    <a
+                      href={project.links.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-4 py-2 bg-white text-black rounded-lg text-sm font-medium hover:bg-gray-200 transition-colors"
+                    >
+                      <Globe size={16} />
+                      Website
+                    </a>
+
+                    <a
+                      href={project.links.source}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-4 py-2 border border-gray-700 rounded-lg text-sm font-medium hover:border-gray-600 transition-colors"
+                    >
+                      <Github size={16} />
+                      Source
+                    </a>
+                  </>
+                ) : (
+                  <span className="text-gray-500 text-sm">
+                    Coming soon...
+                  </span>
+                )}
               </div>
             </div>
           ))}
