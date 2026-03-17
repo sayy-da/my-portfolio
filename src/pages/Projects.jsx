@@ -8,7 +8,7 @@ export default function Projects() {
   title: "Hive",
   date: "December 2025 - Present",
   description: "Hive is a virtual workspace web application that enables users to collaborate and organize their work efficiently in a shared environment.",
-  tags: ["Repository Architecture", "SOLID", "OOPS", "React", "JavaScript", "MongoDB", "Node.js", "Express.js", "Phaser", "WebSockets"],
+  tags: ["Repository Architecture", "SOLID", "OOPS", "React", "JavaScript", "TypeScript","MongoDB", "Node.js", "Express.js", "Phaser", "WebSockets"],
   links:null
   //  {
   //   website: "https://github.com/sayy-da",
